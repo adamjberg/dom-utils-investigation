@@ -1,0 +1,1 @@
+esbuild src/index.js --bundle --minify --outfile=index.js
