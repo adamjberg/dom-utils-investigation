@@ -399,6 +399,6 @@ Rounding these numbers a bit we get 0.5 ms vs. 20 ms or a 40 times speed up.
 
 It's obvious that these micro-benchmarks would reveal the results that they do.  I've been curious to know more precisely what the difference is and this investigation has helped me confirm.  
 
-What is less clear to me is whether this approach breaks down when it comes to cross component communication. The concept of props is not really tested here and that is arguably one of the key things React is providing (the ability to re-render on props changing).  This will be my next exploration.
+What is less clear to me is whether this approach breaks down when it comes to cross component communication. The concept of props is not really tested here and that is arguably one of the key things React is providing (the ability to re-render on props changing).  This will be my next exploration which might be well demonstrated within the context of client-side routing.
 
 I'm also uncertain whether JSX would bring improvements or just be an additional compliation step that isn't really worth it.  I suspect most of what it provides could be achieved through better utility functions and conventions.  The additional benefit of this is that these approaches become more language agnostic as I would eventually like to look into porting this into Rust.
